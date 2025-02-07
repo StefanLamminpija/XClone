@@ -1,6 +1,6 @@
-import { Head, Link } from '@inertiajs/react';
+import {Head, Link} from '@inertiajs/react';
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
+export default function Welcome({auth, laravelVersion, phpVersion}) {
     const handleImageError = () => {
         document
             .getElementById('screenshot-container')
@@ -14,30 +14,32 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
     return (
         <>
-            <Head title="X. It's what's happening" />
+            <Head title="X. It's what's happening"/>
 
             <div className="bg-black">
 
                 <div className="relative flex min-h-screen flex-col items-center justify-center selection:text-white">
 
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
+                    <div
+                        className="relative w-full max-w-2xl px-6 lg:max-w-7xl grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
 
-                        <header className="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
+                        <div className="flex lg:col-start-2 lg:justify-center">
 
-                            <div className="flex lg:col-start-2 lg:justify-center">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" className="fill-white">
 
-                                <svg viewBox="0 0 24 24" aria-hidden="true" className="fill-white">
+                                <g>
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                </g>
 
-                                    <g>
-                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                                    </g>
+                            </svg>
 
-                                </svg>
-
-                            </div>
+                        </div>
 
 
-                            <main className="-mx-3 flex flex-1 justify-end">
+                        <main className="-mx-3 flex flex-1 justify-end">
+
+                            <div>
 
                                 {auth.user ? (
                                     <Link
@@ -62,30 +64,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         </Link>
                                     </>
                                 )}
-                            </main>
-                        </header>
 
+                            </div>
 
-                        <footer className="py-16 text-center text-sm text-white/40">
-                            About
-                            Download the X app
-                            Help Center
-                            Terms of Service
-                            Privacy Policy
-                            Cookie Policy
-                            Accessibility
-                            Ads info
-                            Blog
-                            Careers
-                            Brand Resources
-                            Advertising
-                            Marketing
-                            X for Business
-                            Developers
-                            Directory
-                            Settings
-                            © 2025 X Corp.
-                        </footer>
+                        </main>
                     </div>
                 </div>
             </div>
