@@ -36,20 +36,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                             </div>
 
-                            <div className="text-white">
 
-                                Happening Now
-
-                            </div>
-
-                            <nav className="-mx-3 flex flex-1 justify-end">
+                            <main className="-mx-3 flex flex-1 justify-end">
 
                                 {auth.user ? (
                                     <Link
-                                        href={route('dashboard')}
+                                        href={route('Home')}
                                         className="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none"
                                     >
-                                        Dashboard
+                                        Home
                                     </Link>
                                 ) : (
                                     <>
@@ -67,12 +62,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         </Link>
                                     </>
                                 )}
-                            </nav>
+                            </main>
                         </header>
 
-                        <main className="mt-6">
-
-                        </main>
 
                         <footer className="py-16 text-center text-sm text-white/40">
                             About
