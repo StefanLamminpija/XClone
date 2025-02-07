@@ -41,6 +41,14 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
                             <div>
 
+                                <div className="text-white text-[64px] truncate tracking-[-1.2px] font-bold">
+                                    Happening now
+                                </div>
+
+                                <div className="text-white text-[31px] font-bold">
+                                    Join today.
+                                </div>
+
                                 {auth.user ? (
                                     <Link
                                         href={route('Home')}
