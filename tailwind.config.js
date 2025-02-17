@@ -13,10 +13,11 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Arial', ...defaultTheme.fontFamily.sans],
+                x: ['X', ...defaultTheme.fontFamily.sans],
             },
         },
     },
 
     plugins: [forms],
 };
+

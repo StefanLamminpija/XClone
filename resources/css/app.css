@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "X";
+    src: url("/public/fonts/Archivo-Bold.woff") format("woff");
+}
+
