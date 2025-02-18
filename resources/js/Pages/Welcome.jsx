@@ -25,7 +25,7 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
                         <div className="flex lg:col-start-2 lg:justify-center">
 
-                            <svg viewBox="0 0 24 24" aria-hidden="true" className="fill-white">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" className="fill-custom-grey">
 
                                 <g>
                                     <path
@@ -41,11 +41,12 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
                             <div>
 
-                                <div className="text-white text-[64px] truncate tracking-[-1.2px] font-bold">
+                                <div
+                                    className="text-custom-grey text-[64px] truncate tracking-[-1.2px] font-chirp_extra_bold">
                                     Happening now
                                 </div>
 
-                                <div className="text-white text-[31px] font-bold">
+                                <div className="text-custom-grey text-[31px] font-chirp_extra_bold">
                                     Join today.
                                 </div>
 
@@ -58,23 +59,30 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                                     </Link>
                                 ) : (
                                     <>
-                                        <Link
-                                            href={route('login')}
-                                            className="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none"
-                                        >
-                                            Log in
-                                        </Link>
-                                        <Link
-                                            href={route('register')}
-                                            className="text-white bg-blue-600 border-blue-600 bottom-2 min-h-9 min-w-9 w-48 h-10 px-4"
-                                        >
-                                            Create account
-                                        </Link>
+                                        <div>
+
+                                            <Link
+                                                href={route('login')}
+                                                className="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none"
+                                            >
+                                                Log in
+                                            </Link>
+
+                                        </div>
+
+                                        <div>
+
+                                            <Link
+                                                href={route('register')}
+                                                className="text-white bg-custom-blue text-[15px] font-mac_regular"
+                                            >
+                                                Create account
+                                            </Link>
+
+                                        </div>
                                     </>
                                 )}
-
                             </div>
-
                         </main>
                     </div>
                 </div>
