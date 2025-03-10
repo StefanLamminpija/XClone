@@ -13,11 +13,16 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                x: ['X', ...defaultTheme.fontFamily.sans],
+                chirp_extra_bold: ['Chirp-ExtraBold', ...defaultTheme.fontFamily.sans],
+                mac_regular: ['Mac-Regular', ...defaultTheme.fontFamily.sans],
+                mac_bold: ['Mac-Bold', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                'custom-grey' : '#e7e9ea',
+                'custom-blue' : '#1d9bf0',
             },
         },
     },
 
     plugins: [forms],
 };
-

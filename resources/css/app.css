@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "X";
-    src: url("/public/fonts/Archivo-Bold.woff") format("woff");
+    font-family: 'Chirp-ExtraBold';
+    src: local('Chirp-ExtraBold'), url(/public/fonts/SemiExpanded-ExtraBold.woff) format('woff');
+    /* other formats include: 'woff2', 'opentype',
+                              'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+    font-family: 'Mac-Regular';
+    src: local('Mac-Regular'), url(/public/fonts/Mac-Regular.woff) format('woff');
+    /* other formats include: 'woff2', 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Mac-Bold';
+    src: local('Mac-Bold'), url(/public/fonts/Mac-Bold.woff) format('woff');
+    /* other formats include: 'woff2', 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
