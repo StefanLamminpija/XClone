@@ -18,10 +18,9 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
             <div className="bg-black">
 
-                <div className="relative flex min-h-screen flex-col items-center justify-center selection:text-white">
+                <div className="relative flex min-h-screen flex-col items-center justify-center">
 
-                    <div
-                        className="relative w-full max-w-2xl px-6 lg:max-w-7xl grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
+                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
 
                         <div className="flex lg:col-start-2 lg:justify-center">
 
@@ -46,7 +45,7 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                                     Happening now
                                 </div>
 
-                                <div className="text-custom-grey text-[31px] font-chirp_extra_bold">
+                                <div className="text-custom-grey text-[31px] font-chirp_extra_bold mb-3">
                                     Join today.
                                 </div>
 
@@ -59,24 +58,29 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                                     </Link>
                                 ) : (
                                     <>
+                                        <div className="">
+
+                                            <Link
+                                                href={route('register')}
+                                                className="text-white bg-custom-blue text-[15px] font-mac_regular
+                                                pr-[90px] pl-[90px] pt-[10px] pb-[10px] rounded-[48px]"
+                                            >
+                                                Create account
+                                            </Link>
+
+                                        </div>
+
+                                        <div className="text-custom-grey2 leading-3 text-[11px] font-mac_regular mt-3">
+                                            By signing up, you agree to the Terms of Service and Privacy <br/> Policy, including Cookie Use.
+                                        </div>
+
                                         <div>
 
                                             <Link
                                                 href={route('login')}
                                                 className="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none"
                                             >
-                                                Log in
-                                            </Link>
-
-                                        </div>
-
-                                        <div>
-
-                                            <Link
-                                                href={route('register')}
-                                                className="text-white bg-custom-blue text-[15px] font-mac_regular"
-                                            >
-                                                Create account
+                                                Sign in
                                             </Link>
 
                                         </div>
@@ -86,6 +90,27 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                         </main>
                     </div>
                 </div>
+                <footer className="text-custom-grey2 text-[14px] pl-4 pr-4 pb-3 pt-3
+                 font-mac_regular flex flex-col flex-wrap items-center">
+                    About
+                    Download the X app
+                    Help Center
+                    Terms of Service
+                    Privacy Policy
+                    Cookie Policy
+                    Accessibility
+                    Ads info
+                    Blog
+                    Careers
+                    Brand Resources
+                    Advertising
+                    Marketing
+                    X for Business
+                    Developers
+                    Directory
+                    Settings
+                    © 2025 X Corp.
+                </footer>
             </div>
         </>
     );
