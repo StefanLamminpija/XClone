@@ -33,7 +33,24 @@ Route::middleware('guest')->group(function () {
 
     Route::post('reset-password', [NewPasswordController::class, 'store'])
         ->name('password.store');
+
+    Route::get('about', [RegisteredUserController::class, 'create'])
+        ->name('about');
+
+    Route::post('about', [RegisteredUserController::class, 'store']);
+
+    Route::get('download-the-x-app', [RegisteredUserController::class, 'create'])
+        ->name('download-the-x-app');
+
+    Route::post('download-the-x-app', [RegisteredUserController::class, 'store']);
+
+    Route::get('help-center', [RegisteredUserController::class, 'create'])
+        ->name('help-center');
+
+    Route::post('help-center', [RegisteredUserController::class, 'store']);
 });
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('verify-email', EmailVerificationPromptController::class)

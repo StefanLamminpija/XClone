@@ -36,7 +36,7 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                         </div>
 
 
-                        <main className="-mx-3 flex flex-1 justify-end">
+                        <main className="flex">
 
                             <div>
 
@@ -62,7 +62,7 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
                                             <Link
                                                 href={route('register')}
-                                                className="text-white bg-custom-blue text-[15px] font-mac_regular
+                                                className="text-white bg-custom-blue text-[15px] font-mac_bold
                                                 pr-[90px] pl-[90px] pt-[10px] pb-[10px] rounded-[48px]"
                                             >
                                                 Create account
@@ -90,11 +90,14 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                             </div>
                         </main>
                     </div>
-                    <div className="text-custom-grey2 text-[14px] pl-4 pr-4 pb-3 pt-3 absolute bottom-0
-                        font-mac_regular flex flex-col flex-wrap items-center">
-                        About
-                        Download the X app
-                        Help Center
+                    <div className="text-custom-grey2 text-[14px] pl-4 pr-4 pb-3 pt-3 absolute bottom-0 font-mac_regular flex flex-col flex-wrap items-center">
+
+                        <Link href={route('about')}> About </Link>
+
+                        <Link href={route('download-the-x-app')}> Download the X app </Link>
+
+                        <Link href={route('help-center')}> Help Center </Link>
+
                         Terms of Service
                         Privacy Policy
                         Cookie Policy
