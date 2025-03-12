@@ -20,9 +20,9 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
 
                 <div className="relative flex min-h-screen flex-col items-center justify-center">
 
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
+                    <div className="lg:max-w-7xl grid grid-cols-2 items-center lg:grid-cols-3">
 
-                        <div className="flex lg:col-start-2 lg:justify-center">
+                        <div className="flex size-[380px]">
 
                             <svg viewBox="0 0 24 24" aria-hidden="true" className="fill-custom-grey">
 
@@ -71,7 +71,8 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                                         </div>
 
                                         <div className="text-custom-grey2 leading-3 text-[11px] font-mac_regular mt-3">
-                                            By signing up, you agree to the Terms of Service and Privacy <br/> Policy, including Cookie Use.
+                                            By signing up, you agree to the Terms of Service and Privacy <br/> Policy,
+                                            including Cookie Use.
                                         </div>
 
                                         <div>
@@ -89,28 +90,28 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                             </div>
                         </main>
                     </div>
+                    <div className="text-custom-grey2 text-[14px] pl-4 pr-4 pb-3 pt-3 absolute bottom-0
+                        font-mac_regular flex flex-col flex-wrap items-center">
+                        About
+                        Download the X app
+                        Help Center
+                        Terms of Service
+                        Privacy Policy
+                        Cookie Policy
+                        Accessibility
+                        Ads info
+                        Blog
+                        Careers
+                        Brand Resources
+                        Advertising
+                        Marketing
+                        X for Business
+                        Developers
+                        Directory
+                        Settings
+                        © 2025 X Corp.
+                    </div>
                 </div>
-                <footer className="text-custom-grey2 text-[14px] pl-4 pr-4 pb-3 pt-3
-                 font-mac_regular flex flex-col flex-wrap items-center">
-                    About
-                    Download the X app
-                    Help Center
-                    Terms of Service
-                    Privacy Policy
-                    Cookie Policy
-                    Accessibility
-                    Ads info
-                    Blog
-                    Careers
-                    Brand Resources
-                    Advertising
-                    Marketing
-                    X for Business
-                    Developers
-                    Directory
-                    Settings
-                    © 2025 X Corp.
-                </footer>
             </div>
         </>
     );
