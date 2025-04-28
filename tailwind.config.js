@@ -16,6 +16,7 @@ export default {
                 chirp_extra_bold: ['Chirp-ExtraBold', ...defaultTheme.fontFamily.sans],
                 mac_regular: ['Mac-Regular', ...defaultTheme.fontFamily.sans],
                 mac_bold: ['Mac-Bold', ...defaultTheme.fontFamily.sans],
+                google_sans: ['Google Sans', ...defaultTheme.fontFamily.sans]
             },
             colors: {
                 'custom-grey' : '#e7e9ea',

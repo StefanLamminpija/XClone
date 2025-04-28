@@ -22,3 +22,10 @@
     /* other formats include: 'woff2', 'opentype',
                               'embedded-opentype', and 'svg' */
 }
+
+@font-face {
+    font-family: 'Google-Sans';
+    src: local('Google-Sans'), url(/public/fonts/OpenSans-Regular.woff) format('woff');
+    /* other formats include: 'woff2', 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
